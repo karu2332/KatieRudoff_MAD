@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="197" translatesAutoresizingMaskIntoConstraints="NO" id="HWD-4d-Z64">
+                                <rect key="frame" x="40" y="216" width="334" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vps-n7-XjE">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Gudetama">
+                                            <color key="titleColor" systemColor="systemRedColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chooseGudetama:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vQW-TN-JDm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3L4-Zy-V74">
+                                        <rect key="frame" x="281" y="0.0" width="53" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Pekkle">
+                                            <color key="titleColor" systemColor="systemRedColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chooseGudetama:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3JH-wi-UWT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="sanrio" translatesAutoresizingMaskIntoConstraints="NO" id="ub7-2G-tvj">
+                                <rect key="frame" x="34.5" y="269" width="345" height="389"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="ub7-2G-tvj" secondAttribute="height" multiplier="345:389" id="3l3-ik-0Xc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sanrio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxI-BR-FUV">
+                                <rect key="frame" x="139.5" y="136" width="135.5" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sanrio is a Japanese company." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2h-AW-SiD">
+                                <rect key="frame" x="84" y="690" width="246.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ub7-2G-tvj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3ep-2H-lGf"/>
+                            <constraint firstItem="ub7-2G-tvj" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.833333" id="5J8-fY-QkE"/>
+                            <constraint firstItem="IxI-BR-FUV" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-287" id="DdX-AT-Bbx"/>
+                            <constraint firstItem="HWD-4d-Z64" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-220" id="PET-L7-gGu"/>
+                            <constraint firstItem="HWD-4d-Z64" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Py5-oX-c9u"/>
+                            <constraint firstItem="ub7-2G-tvj" firstAttribute="top" secondItem="HWD-4d-Z64" secondAttribute="bottom" constant="19" id="a7T-4d-qjf"/>
+                            <constraint firstItem="IxI-BR-FUV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cbr-fc-bwB"/>
+                            <constraint firstItem="r2h-AW-SiD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pyj-y4-za0"/>
+                            <constraint firstItem="r2h-AW-SiD" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="247.75" id="zUF-bF-nhZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="paragraphText" destination="r2h-AW-SiD" id="Wgo-Ye-cL0"/>
+                        <outlet property="sanrioImage" destination="ub7-2G-tvj" id="nXz-rK-xKR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="76.339285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sanrio" width="345" height="389"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
