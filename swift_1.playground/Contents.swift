@@ -105,7 +105,7 @@ if let currentScore = score {
 }
 
 // implicitely unwrapped optional
-// never be used if  avriable will become nill at any point 
+// never be used if  avriable will become nill at any point
 let newScore : Int! = 95
 print("My new score is \(newScore)")
 
