@@ -40,7 +40,7 @@
 		873FDEBB26EA62560056CCB4 = {
 			isa = PBXGroup;
 			children = (
-				873FDEC626EA62560056CCB4 /* beatles */,
+				873FDEC626EA62560056CCB4 /* lab-3 */,
 				873FDEC526EA62560056CCB4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,7 +53,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		873FDEC626EA62560056CCB4 /* beatles */ = {
+		873FDEC626EA62560056CCB4 /* lab-3 */ = {
 			isa = PBXGroup;
 			children = (
 				873FDEC726EA62560056CCB4 /* AppDelegate.swift */,
@@ -64,7 +64,7 @@
 				873FDED226EA625D0056CCB4 /* LaunchScreen.storyboard */,
 				873FDED526EA625D0056CCB4 /* Info.plist */,
 			);
-			path = beatles;
+			path = "lab-3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,7 +287,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = beatles/Info.plist;
+				INFOPLIST_FILE = "lab-3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +305,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = beatles/Info.plist;
+				INFOPLIST_FILE = "lab-3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
