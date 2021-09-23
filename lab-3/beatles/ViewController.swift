@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  beatles
+//  lab-3
 //
-//  Created by Katie Rudoff on 9/9/21.
+//  Created by Katie Rudoff on 9/22/21.
 //
 
 import UIKit
@@ -17,11 +17,19 @@ class ViewController: UIViewController {
     
     func updateImage() {
         if imageControl.selectedSegmentIndex == 0 {
-            titleLabel.text = "Young Beatles"
-            beatlesImage.image = UIImage(named: "beatles1")
+            titleLabel.text = "Bob"
+            beatlesImage.image = UIImage(named: "bob")
         } else if imageControl.selectedSegmentIndex == 1 {
-            titleLabel.text = "Not so young Beatles"
-            beatlesImage.image = UIImage(named: "beatles2")
+            titleLabel.text = "Kevin"
+            beatlesImage.image = UIImage(named: "kevin")
+        }
+    }
+    
+    func updateFontColor() {
+        if imageControl.selectedSegmentIndex == 0 {
+            titleLabel.textColor = UIColor.red
+        } else if imageControl.selectedSegmentIndex == 1 {
+            titleLabel.textColor = UIColor.orange
         }
     }
     
@@ -48,6 +56,7 @@ class ViewController: UIViewController {
     @IBAction func changeInfo(_ sender: UISegmentedControl) {
         updateImage()
         updateCaps()
+        updateFontColor()
     }
     
     override func viewDidLoad() {
@@ -55,4 +64,3 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 }
-
