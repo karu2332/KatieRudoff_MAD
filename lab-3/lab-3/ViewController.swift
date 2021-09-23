@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         if imageControl.selectedSegmentIndex == 0 {
             titleLabel.textColor = UIColor.red
         } else if imageControl.selectedSegmentIndex == 1 {
-            titleLabel.textColor = UIColor.orange
+            titleLabel.textColor = UIColor.purple
         }
     }
     
