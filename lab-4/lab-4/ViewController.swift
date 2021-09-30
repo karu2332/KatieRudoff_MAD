@@ -23,7 +23,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func updateTotal() {
-        var myPrice : Float // price of fruit
+        var myPrice : Float  = 0.00 // price of fruit
         
         if price.text!.isEmpty {
             myPrice = 0.0
@@ -66,6 +66,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         // Assign a delegate
         price.delegate = self
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
     }
     
