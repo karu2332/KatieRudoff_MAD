@@ -1,9 +1,8 @@
-// variables
+// constants and variables
 var message : String = "Hello World"
 
 // constants - cannot change the value of constants
-let classMax: Int
-classMax = 20
+let classMax: Int = 20
 
 // type inference (providing an initial value)
 var name = "Katie"
@@ -12,6 +11,7 @@ var name = "Katie"
 print("hi there")
 print("hi " + name)
 print("my name is \(name)")
+print("\(name)" + "\(name)")
 
 let a = 42
 let b = 0.123
@@ -44,7 +44,8 @@ else {
 age < 21 ? young : notyoung
 
 // switch statement - must be exhaustive
-switch age {
+let myAge = 60
+switch myAge {
     case 0...5: print("You're a wee bitty one")
     case 6...21: print("Enjoy school")
     case 22...55: print("Welcome to the real world")

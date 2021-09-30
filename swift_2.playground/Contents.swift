@@ -120,8 +120,17 @@ shoppingList.remove(at: 1)
 // dictionaries
 // Unordered set of key value pairs
 
-var newList:[String: String]
-var classes = [String: String] = ["4120":"MAD", "2200":"Web]
+var newList = [String: String]()
+var classes:[String: String] = ["4120":"MAD", "2200":"Web"]
+
+classes["4120"]
+classes["2000"] = "MIT"
+classes.count
+
+classes.updateValue("Mobile App Dev", forKey: "4120")
+classes["4120"]
+classes.removeValue(forKey: "2200")
+classes.count
 
 
 
