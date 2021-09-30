@@ -51,6 +51,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             alert.addAction(okAction)
             present(alert, animated: true, completion: nil)
         } // end else
+        
         // format results as currency
         let currencyFormatter = NumberFormatter()
         // set the numbe style
