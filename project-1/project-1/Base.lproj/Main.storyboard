@@ -93,28 +93,35 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDT-pz-L6r">
-                                <rect key="frame" x="66" y="778" width="95" height="36"/>
+                                <rect key="frame" x="20" y="760" width="95" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBg-4f-0w6">
-                                <rect key="frame" x="235" y="775" width="133" height="42"/>
+                                <rect key="frame" x="141" y="754" width="133" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBt-x4-jnF">
+                                <rect key="frame" x="315" y="814" width="49" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Clear"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zbp-Sn-VlQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1nO-Kv-esI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TBt-x4-jnF" secondAttribute="trailing" constant="30" id="9CB-3A-kT1"/>
                             <constraint firstItem="zbp-Sn-VlQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="F9o-cx-39n"/>
-                            <constraint firstItem="QDT-pz-L6r" firstAttribute="baseline" secondItem="kBg-4f-0w6" secondAttribute="baseline" constant="-3" id="MDv-KO-2wF"/>
+                            <constraint firstItem="QDT-pz-L6r" firstAttribute="baseline" secondItem="kBg-4f-0w6" secondAttribute="baseline" id="MDv-KO-2wF"/>
+                            <constraint firstItem="TBt-x4-jnF" firstAttribute="top" secondItem="zbp-Sn-VlQ" secondAttribute="bottom" constant="75" id="MkV-6K-paW"/>
                             <constraint firstItem="zbp-Sn-VlQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="PFA-jG-Yo5"/>
-                            <constraint firstItem="kBg-4f-0w6" firstAttribute="leading" secondItem="QDT-pz-L6r" secondAttribute="trailing" constant="74" id="Uf6-KN-2iN"/>
-                            <constraint firstItem="QDT-pz-L6r" firstAttribute="top" secondItem="zbp-Sn-VlQ" secondAttribute="bottom" constant="39" id="aK9-d5-Yh0"/>
-                            <constraint firstItem="QDT-pz-L6r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="b5W-6C-rhx"/>
+                            <constraint firstItem="kBg-4f-0w6" firstAttribute="leading" secondItem="QDT-pz-L6r" secondAttribute="trailing" constant="26" id="Uf6-KN-2iN"/>
+                            <constraint firstItem="QDT-pz-L6r" firstAttribute="top" secondItem="zbp-Sn-VlQ" secondAttribute="bottom" constant="21" id="aK9-d5-Yh0"/>
+                            <constraint firstItem="QDT-pz-L6r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="b5W-6C-rhx"/>
                             <constraint firstItem="zbp-Sn-VlQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-123" id="kmg-Hb-dSk"/>
                         </constraints>
                     </view>
