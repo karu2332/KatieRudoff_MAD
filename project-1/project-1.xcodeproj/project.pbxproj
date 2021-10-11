@@ -72,9 +72,9 @@
 			children = (
 				87B776B82700219100F52093 /* AppDelegate.swift */,
 				87B776BA2700219100F52093 /* SceneDelegate.swift */,
+				870DBA9E2700F99700A99C5D /* TableViewCell.swift */,
 				87B776BC2700219100F52093 /* ViewController.swift */,
 				87B776BE2700219100F52093 /* Main.storyboard */,
-				870DBA9E2700F99700A99C5D /* TableViewCell.swift */,
 				87B776C12700219500F52093 /* Assets.xcassets */,
 				87B776CD270032DB00F52093 /* icons8-apple-60.png */,
 				87B776D0270032DB00F52093 /* icons8-banana-60.png */,

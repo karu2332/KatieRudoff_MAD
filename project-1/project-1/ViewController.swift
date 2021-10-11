@@ -9,8 +9,23 @@ import UIKit
 
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var cells = [TableViewCell]()
 
     @IBOutlet weak var groceryTable: UITableView!
+    
+    @IBAction func clearAll(_ sender: UIButton) {
+        // zero out the total at the bottom
+        TableViewCell.total = 0.0
+        let label = sender.superview?.viewWithTag(1) as! UILabel
+        label.text = "$0.00"
+        // zero out the quantities and stepper values
+        for cell in cells {
+            cell.myQty = 0
+            cell.qty?.text = "Qty: 0"
+            cell.cellStepper.value = 0
+        }
+    }
     
     let listArray = ["Apple", "Bananas", "Milk", "Peanut Butter", "Steak", "Bread"]
     let imageArray = ["icons8-apple-60.png",
@@ -47,6 +62,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.detailText?.text = String(format: "$%.02f", priceArray[indexPath.row])
         cell.imageView?.image = UIImage(named: imageArray [indexPath.row])
         cell.qty?.text = "Qty: \(cell.myQty)"
+        // add cell to list
+        if !self.cells.contains(cell) {
+            self.cells.append(cell)
+        }
         return cell
     }
 }
