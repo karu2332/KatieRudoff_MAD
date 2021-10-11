@@ -17,6 +17,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBAction func clearAll(_ sender: UIButton) {
         // zero out the total at the bottom
         TableViewCell.total = 0.0
+        // https://stackoverflow.com/questions/25412606/find-uilabel-in-uiview-in-swift
         let label = sender.superview?.viewWithTag(1) as! UILabel
         label.text = "$0.00"
         // zero out the quantities and stepper values
