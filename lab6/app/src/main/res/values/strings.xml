@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">lab-6</string>
+    <string name="buttonText">Play!</string>
+    <string name="songHint">Enter a song</string>
+</resources>
