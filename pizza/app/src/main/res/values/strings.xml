@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">pizza</string>
+    <string name="pizzaPlanet">Pizza Planet</string>
+    <string name="neapolitan">Neapolitan</string>
+    <string name="chicago">Chicago</string>
+    <string name="sicilian">Sicilian</string>
+    <string name="pizzaButton">Order Pizza</string>
+    <string name="toppings">Extra Toppings</string>
+    <string name="meatToppings">Meat Toppings</string>
+    <string name="sausage">Sausage</string>
+    <string name="pepperoni">Pepperoni</string>
+    <string name="beef">Beef</string>
+    <string name="bacon">Bacon</string>
+    <string name="veggieToppings">Veggie Toppings</string>
+    <string name="peppers">Peppers</string>
+    <string name="tomatoes">Tomatoes</string>
+    <string name="onions">Onions</string>
+    <string name="mushrooms">Mushrooms</string>
+    <string name="gluten_free">Gluten Free</string>
+    <string-array name="location">
+        <item>Boss Lady</item>
+        <item>Cosmos</item>
+        <item>Blackjack</item>
+    </string-array>
+</resources>
