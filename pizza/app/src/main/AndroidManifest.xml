@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/PizzaPlanet">
         <activity
+            android:name=".PizzaActivity"
+            android:exported="false"
+            android:label="@string/title_activity_pizza"
+            android:theme="@style/PizzaPlanet.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

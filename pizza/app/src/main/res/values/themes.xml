@@ -23,7 +23,17 @@
         <item name="colorSecondaryVariant">@color/secondaryLightColor</item>
         <item name="colorOnSecondary">@color/secondaryDarkColor</item>
 
-        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline5</item>
-        <item name = "android:fontFamily">@font/rancho</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline5
+        </item>
+        <item name="android:fontFamily">@font/rancho</item>
     </style>
+
+    <style name="PizzaPlanet.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="PizzaPlanet.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PizzaPlanet.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
