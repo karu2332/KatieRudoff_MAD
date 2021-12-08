@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">project-2</string>
+    <string name="increment">+</string>
+    <string name="decrement">-</string>
+    <string name="quantity">Qty:</string>
+    <string name="qty">Qty:</string>
+    <string name="total">Total</string>
+    <string name="total_label">Total</string>
+    <string name="total_price" />
+    <string name="reset">Reset</string>
+    <string name="calculate">Calculate</string>
+    <string name="calculate_2">Calculate</string>
+</resources>
